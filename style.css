@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap");
 body {
+    padding: 2rem;
     background-color: #f0f1f5;
     color: #0a0e15;
 }
-h1 {
-    color: #f0f1f5;
+header {
+}
+.syne-bold {
+    font-family: "Syne", sans-serif;
+    color: #0a0e15;
+}
+.inter-regular {
+    font-family: "Inter", sans-serif;
 }
