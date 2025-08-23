@@ -3,6 +3,7 @@ body {
     padding: 2rem;
     background-color: #f0f1f5;
     color: #0a0e15;
+    line-height: 1.5rem;
 }
 header {
 }
@@ -12,4 +13,22 @@ header {
 }
 .inter-regular {
     font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+a {
+    color: #0a0e15;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
 }
