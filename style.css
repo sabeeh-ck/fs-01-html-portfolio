@@ -1,12 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     padding: 2rem;
+    margin: auto;
+    max-width: 800px;
     background-color: #f0f1f5;
     color: #0a0e15;
     line-height: 1.5rem;
 }
-header {
+
+header ul {
+    text-align: right;
 }
+
+header li {
+    display: inline-block;
+    font-weight: 700;
+    margin-inline: 1rem;
+}
+
 .syne-bold {
     font-family: "Syne", sans-serif;
     color: #0a0e15;
@@ -15,8 +31,20 @@ header {
     font-family: "Inter", sans-serif;
 }
 
+main {
+    margin-top: 2rem;
+}
+
 h1 {
     font-size: xx-large;
+    padding: 1rem 0;
+}
+h2 {
+    padding: 0.5rem 0;
+}
+
+h3 {
+    padding: 0.5rem 0;
 }
 
 a {
@@ -24,11 +52,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;
 }
 
-ul {
+main ul {
     list-style: none;
     padding-left: 1rem;
 }
