@@ -13,7 +13,12 @@ body {
     line-height: 1.5rem;
 }
 
+header img {
+    float: left;
+}
+
 header ul {
+    padding: 0.5rem 0;
     text-align: right;
 }
 
