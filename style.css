@@ -1,16 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    padding: 2rem;
+    padding: 0 2rem;
     margin: auto;
     max-width: 800px;
     background-color: #f0f1f5;
     color: #0a0e15;
     line-height: 1.5rem;
+}
+
+header {
+    padding: 1.5rem 0;
+    background-color: #f0f1f5;
+    position: sticky;
+    top: 0;
 }
 
 header img {
@@ -24,26 +37,24 @@ header ul {
 
 header li {
     display: inline-block;
-    font-weight: 700;
     margin-inline: 1rem;
 }
 
 .syne-bold {
     font-family: "Syne", sans-serif;
     color: #0a0e15;
-}
-.inter-regular {
-    font-family: "Inter", sans-serif;
+    font-weight: 700;
 }
 
-main {
-    margin-top: 2rem;
+.inter-regular {
+    font-family: "Inter", sans-serif;
 }
 
 h1 {
     font-size: xx-large;
     padding: 1rem 0;
 }
+
 h2 {
     padding: 0.5rem 0;
 }
@@ -65,4 +76,8 @@ a:focus {
 main ul {
     list-style: none;
     padding-left: 1rem;
+}
+
+footer {
+    padding: 1.5rem 0;
 }
