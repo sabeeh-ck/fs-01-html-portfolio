@@ -51,8 +51,13 @@ header li {
 }
 
 h1 {
-    font-size: xx-large;
-    padding: 1rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.sub {
+    text-align: center;
 }
 
 h2 {
