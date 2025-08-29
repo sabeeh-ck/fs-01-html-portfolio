@@ -10,13 +10,21 @@ html {
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
 body {
     padding: 0 2rem;
     margin: auto;
     max-width: 800px;
     background-color: #f0f1f5;
     color: #0a0e15;
-    line-height: 1.5rem;
+    line-height: 1.2;
 }
 
 header {
@@ -26,18 +34,26 @@ header {
     top: 0;
 }
 
-header img {
-    float: left;
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
-header ul {
-    padding: 0.5rem 0;
-    text-align: right;
+nav ul {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
-header li {
+nav li {
     display: inline-block;
-    margin-inline: 1rem;
+    margin-inline: clamp(0.25rem, 2vw, 1rem);
+}
+
+section {
+    scroll-margin-top: 5.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .syne-bold {
@@ -51,7 +67,7 @@ header li {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-align: center;
     padding-top: 1rem;
 }
@@ -80,9 +96,8 @@ a:focus {
 
 main ul {
     list-style: none;
-    padding-left: 1rem;
 }
 
 footer {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
