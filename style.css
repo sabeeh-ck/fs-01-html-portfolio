@@ -19,9 +19,8 @@ img {
 }
 
 body {
-    padding: 0 2rem;
+    padding: 4rem;
     margin: auto;
-    max-width: 800px;
     background-color: #f0f1f5;
     color: #0a0e15;
     line-height: 1.2;
@@ -54,6 +53,11 @@ nav li {
 section {
     scroll-margin-top: 5.5rem;
     padding-bottom: 0.5rem;
+}
+
+.syne-regular {
+    font-family: "Syne", sans-serif;
+    color: #0a0e15;
 }
 
 .syne-bold {
@@ -99,5 +103,7 @@ main ul {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     padding: 1rem 0;
 }
