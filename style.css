@@ -10,6 +10,11 @@ html {
     box-sizing: border-box;
 }
 
+:root {
+    --LIGHT-COLOR: #f0f1f5;
+    --DARK-COLOR: #0a0e15;
+}
+
 img {
     display: block;
 }
@@ -18,51 +23,14 @@ img {
     white-space: nowrap;
 }
 
-body {
-    padding: 4rem;
-    margin: auto;
-    background-color: #f0f1f5;
-    color: #0a0e15;
-    line-height: 1.2;
-}
-
-header {
-    padding: 1.5rem 0;
-    background-color: #f0f1f5;
-    position: sticky;
-    top: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: clamp(0.85rem, 2vw, 1rem);
-}
-
-nav ul {
-    margin-left: 0.5rem;
-    display: flex;
-    align-items: center;
-}
-
-nav li {
-    display: inline-block;
-    margin-inline: clamp(0.25rem, 2vw, 1rem);
-}
-
-section {
-    scroll-margin-top: 5.5rem;
-    padding-bottom: 0.5rem;
-}
-
 .syne-regular {
     font-family: "Syne", sans-serif;
-    color: #0a0e15;
+    color: var(--DARK-COLOR);
 }
 
 .syne-bold {
     font-family: "Syne", sans-serif;
-    color: #0a0e15;
+    color: var(--DARK-COLOR);
     font-weight: 700;
 }
 
@@ -70,14 +38,73 @@ section {
     font-family: "Inter", sans-serif;
 }
 
+body {
+    padding: 0 6rem;
+    margin: auto;
+    background-color: var(--LIGHT-COLOR);
+    color: var(--DARK-COLOR);
+    line-height: 1.2;
+}
+
+header {
+    position: fixed;
+    top: 96px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 6rem;
+}
+
+nav a {
+    justify-content: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: block;
+    margin: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* 
+    scroll-margin-top: 5.5rem; */
+    padding-bottom: 0.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-size: 2.5em;
-    text-align: center;
     padding-top: 1rem;
 }
 
-.sub {
-    text-align: center;
+main .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+main a {
+    margin: 0.5rem;
 }
 
 h2 {
@@ -89,7 +116,7 @@ h3 {
 }
 
 a {
-    color: #0a0e15;
+    color: var(--DARK-COLOR);
     text-decoration: none;
 }
 
@@ -98,12 +125,16 @@ a:focus {
     text-decoration: underline;
 }
 
+section .about {
+    font-size: 20px;
+}
+
 main ul {
     list-style: none;
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     padding: 1rem 0;
 }

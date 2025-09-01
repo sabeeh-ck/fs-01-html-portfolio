@@ -10,19 +10,25 @@
     <body>
         <header>
             <nav>
-                <a href="index.html"><img src="s2.jpg" alt="logo" width="40" /></a>
+                <a href="#"><img src="s2.jpg" alt="logo" width="48" /></a>
                 <ul class="syne-bold">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="about" class="main">
-                <h1 class="syne-bold">HI, I'M <span class="nowrap"> MUHAMMED SABEEH C K</span>👋</h1>
+            <section id="main" class="main">
+                <h1 class="syne-bold">HI, I'M <span class="nowrap"> MUHAMMED SABEEH C K</span></h1>
                 <h3 class="syne-bold sub">COMPUTER SCIENCE & ENGINEEERING GRADUATE</h3>
+                <div class="links syne-bold">
+                    <a href="#about">About Me</a>
+                    <a href="#projects">Projects</a>
+                </div>
+            </section>
+            <section id="about" class="about">
                 <h2 class="syne-bold">About Me</h2>
                 <p class="inter-regular">
                     I'm a motivated Computer Science graduate with a solid foundation in software development,
@@ -31,6 +37,25 @@
                 </p>
             </section>
             <hr />
+            <section id="projects">
+                <h2 class="syne-bold">Projects</h2>
+                <h3 class="syne-regular">Animal Detection and Deterrence System - May 2025</h3>
+                <ul class="syne-regular">
+                    <li>
+                        <p>
+                            Developed a real-time animal detection and deterrence system using
+                            <strong>TensorFlow's Inception V3</strong> to identify wild animals from video footage
+                            and trigger frequency-based buzzers to scare them away
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Integrated an automated email alert system to notify registered forest officers with
+                            the detected animal type and camera location details.
+                        </p>
+                    </li>
+                </ul>
+            </section>
 
             <hr />
             <section id="skills">
