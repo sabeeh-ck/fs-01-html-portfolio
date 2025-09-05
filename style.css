@@ -48,7 +48,7 @@ body {
     font-family: "Syne", sans-serif;
 }
 
-header {
+.header {
     position: fixed;
     top: 1.5rem;
     left: 0;
@@ -56,24 +56,21 @@ header {
     z-index: 10;
 }
 
-nav {
+.header_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
 }
 
-nav img {
+.header_img {
     width: 2rem;
 }
 
-nav ul {
+.header_ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-}
-
-nav li {
+    justify-content: space-around;
     font-weight: 700;
 }
 
@@ -84,7 +81,7 @@ section {
     height: 100vh;
 }
 
-.main {
+.section-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,18 +93,19 @@ section {
     font-size: 1rem;
 } */
 
-main .links {
+.section-home .home-links {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
     font-weight: 700;
 }
 
-main a {
+.section-home a {
     margin: 0.5rem;
 }
 
 h2 {
+    font-size: 2rem;
     padding: 0.5rem 0;
 }
 
@@ -131,7 +129,12 @@ section .about {
 }
 
 main ul {
+    font-size: inherit;
     list-style: none;
+}
+
+main table {
+    font-size: inherit;
 }
 
 footer {
@@ -139,4 +142,38 @@ footer {
     position: relative;
     bottom: 0;
     padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.25rem;
+    }
+    .header_img {
+        width: 3rem;
+    }
+
+    .header_ul {
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .h1-sub {
+        font-size: 1.5rem;
+    }
+
+    .home-links {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
 }
